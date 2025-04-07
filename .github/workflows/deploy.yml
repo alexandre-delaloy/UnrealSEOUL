@@ -1,13 +1,7 @@
 name: to the moon
 
 on:
-  push:
-    branches:
-      - main
-      - master
-
-  # Allows manual trigger
-  workflow_dispatch:
+  push
 
 permissions:
   pages: write
