@@ -9,14 +9,15 @@
     text-align: center;
     padding: 35px;
     position: relative;
-    &::before, &::after {
-      content:'';
+    &::before,
+    &::after {
+      content: "";
       background: #fff;
       width: 66px;
       height: 5px;
       position: absolute;
       top: 50%;
-      transform: translate(0,-50%);
+      transform: translate(0, -50%);
       transition: all 0.3s ease-in-out;
     }
     &::before {
@@ -41,13 +42,14 @@
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(4, 250px);
     grid-gap: 35px 35px;
-    grid-template-areas: "rdm-1 rdm-2 rdm-2 rdm-3"
-                         "rdm-4 rdm-4 rdm-5 rdm-3"
-                         "rdm-6 rdm-7 rdm-7 rdm-7"
-                         "rdm-6 rdm-8 rdm-9 rdm-9";
+    grid-template-areas:
+      "rdm-1 rdm-2 rdm-2 rdm-3"
+      "rdm-4 rdm-4 rdm-5 rdm-3"
+      "rdm-6 rdm-7 rdm-7 rdm-7"
+      "rdm-6 rdm-8 rdm-9 rdm-9";
     &_article {
       background: grey;
-      transform: scale(1.0);
+      transform: scale(1);
       transition: all 0.3s ease;
       cursor: pointer;
       position: relative;
@@ -56,8 +58,8 @@
         transform: scale(1.025);
       }
       &::before {
-        content: '';
-        background: radial-gradient(rgba(225,225,225,0.15), rgba(255,255,255,0.15));
+        content: "";
+        background: radial-gradient(rgba(225, 225, 225, 0.15), rgba(255, 255, 255, 0.15));
         width: 200px;
         height: 200%;
         position: absolute;
@@ -70,53 +72,51 @@
         transition: all 0.5s;
       }
       &:nth-child(1) {
-        background: url('../assets/imgs/bg/random/random1min.jpg') no-repeat center;
+        background: url("../assets/imgs/bg/random/random1min.jpg") no-repeat center;
         background-size: cover;
         grid-area: rdm-1;
       }
       &:nth-child(2) {
-        background: url('../assets/imgs/bg/random/random2min.jpg') no-repeat center;
+        background: url("../assets/imgs/bg/random/random2min.jpg") no-repeat center;
         background-size: cover;
         grid-area: rdm-2;
       }
       &:nth-child(3) {
-        background: url('../assets/imgs/bg/random/random3min.jpg') no-repeat center;
+        background: url("../assets/imgs/bg/random/random3min.jpg") no-repeat center;
         background-size: cover;
         grid-area: rdm-3;
       }
       &:nth-child(4) {
-        background: url('../assets/imgs/bg/random/random4min.jpg') no-repeat center;
+        background: url("../assets/imgs/bg/random/random4min.jpg") no-repeat center;
         background-size: cover;
         grid-area: rdm-4;
       }
       &:nth-child(5) {
-        background: url('../assets/imgs/bg/random/random5min.jpg') no-repeat center;
+        background: url("../assets/imgs/bg/random/random5min.jpg") no-repeat center;
         background-size: cover;
         grid-area: rdm-5;
       }
       &:nth-child(6) {
-        background: url('../assets/imgs/bg/random/random6min.jpg') no-repeat center;
+        background: url("../assets/imgs/bg/random/random6min.jpg") no-repeat center;
         background-size: cover;
         grid-area: rdm-6;
       }
       &:nth-child(7) {
-        background: url('../assets/imgs/bg/random/random7min.jpg') no-repeat center;
+        background: url("../assets/imgs/bg/random/random7min.jpg") no-repeat center;
         background-size: cover;
         grid-area: rdm-7;
       }
       &:nth-child(8) {
-        background: url('../assets/imgs/bg/random/random8min.jpg') no-repeat center;
+        background: url("../assets/imgs/bg/random/random8min.jpg") no-repeat center;
         background-size: cover;
         grid-area: rdm-8;
       }
       &:nth-child(9) {
-        background: url('../assets/imgs/bg/random/random9min.jpg') no-repeat center;
+        background: url("../assets/imgs/bg/random/random9min.jpg") no-repeat center;
         background-size: cover;
         grid-area: rdm-9;
       }
-
     }
-
   }
   &_imgBox {
     background: red;

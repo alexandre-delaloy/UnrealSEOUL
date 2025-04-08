@@ -13,28 +13,27 @@ const toggleLanguageCTA = () => {
   DOM_langTransition.classList.toggle('header_language-change-toRight');
 }
 
-DOM_langEN.addEventListener('click', function () {
+DOM_langEN.addEventListener('click', () => {
   toggleLanguageCTA();
 });
-DOM_langKR.addEventListener('click', function () {
+DOM_langKR.addEventListener('click', () => {
   toggleLanguageCTA();
 });
 
-
-window.addEventListener('scroll', function () {
+window.addEventListener('scroll', () => {
   if (window.scrollY < scrollBottomOverflow) {
     DOM_langEN.classList.add('colorChange');
     DOM_langKR.classList.add('colorChange');
     DOM_langTransition.classList.add('gradientBackgroundChange');
-  } else if (window.scrollY < DOM_header.offsetHeight - scrollBottomOverflow) {
+  } else if (window.scrollY < DOM_method.offsetHeight + scrollBottomOverflow) {
     DOM_langEN.classList.remove('colorChange');
     DOM_langKR.classList.remove('colorChange');
     DOM_langTransition.classList.remove('gradientBackgroundChange');
-  } else if (window.scrollY < DOM_header.offsetHeight + DOM_method.offsetHeight - scrollBottomOverflow) {
+  } else if (window.scrollY < DOM_method.offsetHeight + DOM_random.offsetHeight + scrollBottomOverflow) {
     DOM_langEN.classList.add('colorChange');
     DOM_langKR.classList.add('colorChange');
     DOM_langTransition.classList.add('gradientBackgroundChange');
-  } else if (window.scrollY < DOM_header.offsetHeight + DOM_method.offsetHeight + DOM_random.offsetHeight - scrollBottomOverflow) {
+  } else if (window.scrollY < DOM_header.offsetHeight + DOM_method.offsetHeight + DOM_random.offsetHeight + scrollBottomOverflow) {
     DOM_langEN.classList.remove('colorChange');
     DOM_langKR.classList.remove('colorChange');
     DOM_langTransition.classList.remove('gradientBackgroundChange');

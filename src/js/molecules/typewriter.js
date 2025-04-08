@@ -1,4 +1,3 @@
-const carrousel = document.querySelector('.header_typewriter');
 const carrouselWrap = document.querySelector('.header_typewriter_items');
 const carouselItemArray = document.querySelectorAll('.header_typewriter_item');
 
@@ -27,9 +26,6 @@ const showNextPlace = () => {
 btnRight.addEventListener('click', function () {
   showNextPlace();
 });
-
-
-const intervalID = window.setInterval(showNextPlace, 2500);
 
 const DOM_input = document.querySelector('.header_button_input');
 const DOM_cta = document.querySelector('.header_button_search');

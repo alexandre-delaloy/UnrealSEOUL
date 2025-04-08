@@ -16,21 +16,20 @@ DOM_mute2.addEventListener('click', () => {
   DOM_mute3.classList.toggle('header_music_after-pulse');
 });
 
-
 window.addEventListener('scroll', function () {
   if (window.scrollY < scrollBottomOverflow) {
     DOM_mute1.classList.add('backgroundChange');
     DOM_mute2.classList.add('backgroundChange');
     DOM_mute3.classList.add('backgroundChange');
-  } else if (window.scrollY < DOM_header.offsetHeight - scrollBottomOverflow) {
+  } else if (window.scrollY < DOM_method.offsetHeight + scrollBottomOverflow) {
     DOM_mute1.classList.remove('backgroundChange');
     DOM_mute2.classList.remove('backgroundChange');
     DOM_mute3.classList.remove('backgroundChange');
-  } else if (window.scrollY < DOM_header.offsetHeight + DOM_method.offsetHeight - scrollBottomOverflow) {
+  } else if (window.scrollY < DOM_method.offsetHeight + DOM_random.offsetHeight + scrollBottomOverflow) {
     DOM_mute1.classList.add('backgroundChange');
     DOM_mute2.classList.add('backgroundChange');
     DOM_mute3.classList.add('backgroundChange');
-  } else if (window.scrollY < DOM_header.offsetHeight + DOM_method.offsetHeight + DOM_random.offsetHeight - scrollBottomOverflow) {
+  } else if (window.scrollY < DOM_header.offsetHeight + DOM_method.offsetHeight + DOM_random.offsetHeight + scrollBottomOverflow) {
     DOM_mute1.classList.remove('backgroundChange');
     DOM_mute2.classList.remove('backgroundChange');
     DOM_mute3.classList.remove('backgroundChange');

@@ -13,8 +13,6 @@ window.addEventListener("scroll", () => {
   DOM_headerView.style.backgroundPosition = coords;
 });
 
-
-
 var DOM_goToAnchorHome = document.querySelector('.header_menu_overlay_item-1');
 var DOM_goToAnchorMethod = document.querySelector('.header_menu_overlay_item-2');
 var DOM_goToAnchorRandom = document.querySelector('.header_menu_overlay_item-3');

@@ -1,5 +1,5 @@
 .header {
-  background: url('../assets/imgs/bg/home_bg.jpg') no-repeat center;
+  background: url("../assets/imgs/bg/home_bg.jpg") no-repeat center;
   background-size: cover;
   background-position: 0% 0px;
   width: 100%;
@@ -14,11 +14,11 @@
       z-index: 2;
       &_path {
         fill: none;
-      	stroke: url(#linear);
-      	stroke-width: 12px;
+        stroke: url(#linear);
+        stroke-width: 12px;
         stroke-dasharray: 400;
-      	stroke-dashoffset: 400;
-      	animation: dash 5s infinite linear;
+        stroke-dashoffset: 400;
+        animation: dash 5s infinite linear;
         transition: all 0.25s ease-out;
       }
     }
@@ -69,7 +69,7 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         transition: all 0.5s ease;
       }
       &_firstLine_before,
@@ -87,10 +87,10 @@
           top: 18px;
         }
         &-anim {
-          transform: translate(-50%,-50%) rotate(-135deg);
+          transform: translate(-50%, -50%) rotate(-135deg);
         }
         &-befafter {
-        opacity: 0;
+          opacity: 0;
         }
       }
       &_lastLine {
@@ -98,12 +98,12 @@
           bottom: 0;
         }
         &-anim {
-          transform: translate(-50%,-50%) rotate(135deg);
+          transform: translate(-50%, -50%) rotate(135deg);
         }
       }
     }
     &_overlay {
-      background: rgba(0,0,0,0.80);
+      background: rgba(0, 0, 0, 0.8);
       width: 160%;
       height: 100vh;
       position: fixed;
@@ -124,12 +124,12 @@
       }
       &_item {
         color: #fff;
-    	  width: 300px;
-    	  height: 75px;
+        width: 300px;
+        height: 75px;
         padding: 0 10px;
         font-size: $Big;
         font-family: $NS-Lgh;
-    	  position: relative;
+        position: relative;
         overflow: hidden;
         text-decoration: none;
         display: flex;
@@ -141,29 +141,29 @@
           letter-spacing: 2.5;
         }
         &::before {
-          content:'';
-      		width: 0%;
-      		height: 200px;
-      		position: absolute;
-      		top: -50px;
-      		left: 0%;
-      		transform: rotate(0deg);
+          content: "";
+          width: 0%;
+          height: 200px;
+          position: absolute;
+          top: -50px;
+          left: 0%;
+          transform: rotate(0deg);
         }
-      	&::after {
-          content:'';
-      		width: 0%;
-      		height: 200px;
-      		position: absolute;
-      		top: -50px;
-      		right: 0%;
-      		transform: rotate(0deg);
-      	}
-      	&:hover:before {
-      		animation: link-anim-l 0.5s ease-in-out;
-      	}
+        &::after {
+          content: "";
+          width: 0%;
+          height: 200px;
+          position: absolute;
+          top: -50px;
+          right: 0%;
+          transform: rotate(0deg);
+        }
+        &:hover:before {
+          animation: link-anim-l 0.5s ease-in-out;
+        }
         &:hover:after {
-      		animation: link-anim-r 0.5s ease-in-out;
-      	}
+          animation: link-anim-r 0.5s ease-in-out;
+        }
         &-1::after,
         &-1::before {
           background: $purple;
@@ -188,7 +188,7 @@
     }
   }
   &_typewriter {
-	  width: 600px;
+    width: 600px;
     height: 100px;
     overflow: hidden;
     position: absolute;
@@ -196,9 +196,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     &_items {
-    	display: flex;
-    	flex-direction: column;
-    	position: relative;
+      display: flex;
+      flex-direction: column;
+      position: relative;
     }
     &_item {
       color: #fff;
@@ -210,7 +210,7 @@
       font-family: $NS-Reg;
     }
     &_transition {
-	    transition: all 750ms ease;
+      transition: all 750ms ease;
     }
   }
   &_button {
@@ -229,9 +229,9 @@
       padding-right: 50px;
       font-family: $NS-xLgh;
       font-size: $Big;
-      white-space: nowrap; 
+      white-space: nowrap;
       overflow: hidden !important;
-      text-overflow: ellipsis; 
+      text-overflow: ellipsis;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
       &:hover {
@@ -264,31 +264,31 @@
       }
       &_path {
         data-original: #000;
-        data-old_color: #fff ;
+        data-old_color: #fff;
         fill: #fff;
       }
     }
   }
   &_music {
     background: $purple;
-	  width: 20px;
-	  height: 20px;
-	  border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
     display: flex;
     align-items: center;
-	  position: fixed;
-	  bottom: 30px;
-	  left: 30px;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
     z-index: 2;
     cursor: pointer;
     &_before,
     &_after {
-      content:'';
-    	background: $purple;
-    	width: 20px;
-    	height: 20px;
-    	border-radius: 100%;
-    	position: absolute;
+      content: "";
+      background: $purple;
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      position: absolute;
       transition: all 0.25s ease-out;
       &-pulse {
         animation: pulse 2s infinite linear;
@@ -310,9 +310,9 @@
     bottom: 25px;
     z-index: 2;
     &::after {
-      content: 'COMMING SOON ! 😁';
+      content: "COMMING SOON ! 😁";
       color: #fff;
-      background: rgba(0,0,0,0.75);
+      background: rgba(0, 0, 0, 0.75);
       width: 200px;
       height: 50px;
       padding: 25px;
@@ -332,36 +332,36 @@
     &_en,
     &_kr {
       cursor: pointer;
-      padding:  2px;
+      padding: 2px;
       position: relative;
       z-index: 1;
-      transition: all .25s ease;
+      transition: all 0.25s ease;
     }
     &-change {
       background: $whiteToBlue-opHrdTurned;
-    	width: 50%;
-    	height: 100%;
-    	position: absolute;
-    	left: 0;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      left: 0;
       z-index: 0;
       &-toRight {
-      	animation: toRight .5s ease-out;
+        animation: toRight 0.5s ease-out;
         width: 50%;
-      	right: 0;
-      	left: 50%;
+        right: 0;
+        left: 50%;
       }
       &-toLeft {
-      	animation: toLeft .5s ease-out;
+        animation: toLeft 0.5s ease-out;
         width: 50%;
-      	left: 0;
-      	right: 50%;
+        left: 0;
+        right: 50%;
       }
     }
   }
 }
 .transitionImg {
-	position: absolute;
-	display: block;
+  position: absolute;
+  display: block;
 }
 
 // .header_button_search:has(.header_button_input:hover) {

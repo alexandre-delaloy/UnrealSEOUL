@@ -43,19 +43,23 @@ input:focus {
 // }
 
 // PLACEHOLDER
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
   color: $white-opHrd;
   font-family: $NS-Lgh;
 }
-::-moz-placeholder { /* Firefox 19+ */
+::-moz-placeholder {
+  /* Firefox 19+ */
   color: $white-opHrd;
   font-family: $NS-Lgh;
 }
-:-ms-input-placeholder { /* IE 10+ */
+:-ms-input-placeholder {
+  /* IE 10+ */
   color: $white-opHrd;
   font-family: $NS-Lgh;
 }
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
+  /* Firefox 18- */
   color: $white-opHrd;
   font-family: $NS-Lgh;
 }
@@ -65,15 +69,16 @@ input:focus {
   width: 30px;
   height: 30px;
   position: fixed;
-  TOP: 25px;
+  top: 25px;
   right: 25px;
   z-index: 6;
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
   transition: all 0.3s ease 0.2s;
-  &::before, &::after {
-    content: '';
+  &::before,
+  &::after {
+    content: "";
     background: #fff;
     width: 30px;
     height: 2px;
@@ -83,16 +88,15 @@ input:focus {
     transform: translate(-50%, -50%) rotate(45deg);
     cursor: pointer;
     transition: all 0.5s ease;
-
   }
   &::after {
-    content: '';
+    content: "";
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-  &:hover:before, &:hover:after {
+  &:hover:before,
+  &:hover:after {
     transform: translate(-50%, -50%) rotate(270deg);
   }
-
 }
 
 .loader:has(.loader_enter:hover) {
@@ -115,8 +119,8 @@ input:focus {
   transition: all 0.666s;
   // animation: loader 2.5s;
   &_active {
-      opacity: 1 !important;
-      visibility: visible !important;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
   &_enter {
     background: transparent;
@@ -142,13 +146,13 @@ input:focus {
       background: $ddBlue;
       border: 2px $ddBlue solid;
       color: $lBlue;
-    &::before {
+      &::before {
         letter-spacing: 1px;
       }
     }
-    
+
     &::before {
-      content: 'Start';
+      content: "Start";
       position: absolute;
       transform: translate(-50%, -50%) rotate(-45deg);
       letter-spacing: 4px;
@@ -167,7 +171,7 @@ input:focus {
     transform: translate(-50%, -50%) rotate(45deg);
     opacity: 1;
     animation: dash667 2.5s forwards;
-    
+
     &_path {
       fill: transparent;
       stroke-width: 4px;
@@ -191,7 +195,7 @@ input:focus {
 
 // WIP
 .wip {
-  background: url('../assets/imgs/bg/wip.jpg') no-repeat center;
+  background: url("../assets/imgs/bg/wip.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -200,5 +204,4 @@ input:focus {
   align-items: center;
   font-family: $NS-Reg;
   font-size: $Big;
-
 }
