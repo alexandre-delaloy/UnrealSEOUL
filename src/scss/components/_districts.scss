@@ -1,5 +1,5 @@
 .district {
-  background: url('../assets/imgs/bg/random_bg.jpg') no-repeat center fixed;
+  background: url("../assets/imgs/bg/random_bg.jpg") no-repeat center fixed;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -19,7 +19,7 @@
     z-index: 1;
     transition: all 0.3s ease;
     &:before {
-      content: '';
+      content: "";
       background: #fff;
       width: 100%;
       height: 100%;

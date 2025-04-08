@@ -1,13 +1,7 @@
-name: to the moon
+name: publish
 
 on:
-  push:
-    branches:
-      - main
-      - master
-
-  # Allows manual trigger
-  workflow_dispatch:
+  push
 
 permissions:
   pages: write
@@ -31,6 +25,9 @@ jobs:
 
       - name: Build the Project
         run: npm run build
+
+      - name: Lint check
+        run: npm run lint
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

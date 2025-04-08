@@ -12,163 +12,166 @@
 
 // MENU LINK
 @keyframes link-anim-l {
-	0%,100% {
-		transform: rotate(0deg);
-		width: 0%;
-		left: 0%;
-	}
-	50% {
-		transform: rotate(22.5deg);
-		width: 58%;
-	left: -10%;
-  opacity: .5;
-	}
+  0%,
+  100% {
+    transform: rotate(0deg);
+    width: 0%;
+    left: 0%;
+  }
+  50% {
+    transform: rotate(22.5deg);
+    width: 58%;
+    left: -10%;
+    opacity: 0.5;
+  }
 }
 @-webkit-keyframes link-anim-l {
-	0%,100% {
-		transform: rotate(0deg);
-		width: 0%;
-		left: 0%;
-	}
-	50% {
-		transform: rotate(22.5deg);
-		width: 58%;
-	left: -10%;
-  opacity: .5;
-	}
+  0%,
+  100% {
+    transform: rotate(0deg);
+    width: 0%;
+    left: 0%;
+  }
+  50% {
+    transform: rotate(22.5deg);
+    width: 58%;
+    left: -10%;
+    opacity: 0.5;
+  }
 }
 @keyframes link-anim-r {
-	0%,100% {
-		transform: rotate(0deg);
-		width: 0%;
-		right: 0%;
-	}
-	50% {
-		transform: rotate(22.5deg);
-		width: 58%;
-	  right: -11%;
+  0%,
+  100% {
+    transform: rotate(0deg);
+    width: 0%;
+    right: 0%;
+  }
+  50% {
+    transform: rotate(22.5deg);
+    width: 58%;
+    right: -11%;
     opacity: 0.5;
-	}
+  }
 }
 @-webkit-keyframes link-anim-r {
-	0%,100% {
-		transform: rotate(0deg);
-		width: 0%;
-		right: 0%;
-	}
-	50% {
-		transform: rotate(22.5deg);
-		width: 58%;
-	  right: -11%;
+  0%,
+  100% {
+    transform: rotate(0deg);
+    width: 0%;
+    right: 0%;
+  }
+  50% {
+    transform: rotate(22.5deg);
+    width: 58%;
+    right: -11%;
     opacity: 0.5;
-	}
+  }
 }
 
 //SLIDER
 
-
 // MUSIC
 
 @keyframes pulse {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.5;
-		transform: scale(1.5, 1.5);
-	}
-	100% {
-		opacity: 0;
-		transform: scale(2, 2)
-	}
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2, 2);
+  }
 }
 @-webkit-keyframes pulse {
-	0% {
-		opacity: 1;
-	}
-	50% {
-		opacity: 0.5;
-		transform: scale(1.5, 1.5);
-	}
-	100% {
-		opacity: 0;
-		transform: scale(2, 2)
-	}
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2, 2);
+  }
 }
 
 // LANGUAGE
 @keyframes toRight {
-	0% {
-		width: 50%;
-		left: 0;
-		right: 50%;
-	}
-	50% {
-		width: 100%;
-		left: 0;
-		right: 0;
-	}
-	100% {
-		width: 50%;
-		right: 0;
-		left: 50%;
-	}
+  0% {
+    width: 50%;
+    left: 0;
+    right: 50%;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  100% {
+    width: 50%;
+    right: 0;
+    left: 50%;
+  }
 }
 @-webkit-keyframes toRight {
-	0% {
-		width: 50%;
-		left: 0;
-		right: 50%;
-	}
-	50% {
-		width: 100%;
-		left: 0;
-		right: 0;
-	}
-	100% {
-		width: 50%;
-		right: 0;
-		left: 50%;
-	}
+  0% {
+    width: 50%;
+    left: 0;
+    right: 50%;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  100% {
+    width: 50%;
+    right: 0;
+    left: 50%;
+  }
 }
 @keyframes toLeft {
-	0% {
-		width: 50%;
-		right: 0;
-		left: 50%;
-	}
-	50% {
-		width: 100%;
-		right: 0;
-		left: 0;
-	}
-	100% {
-		width: 50%;
-		left: 0;
-		right: 50%;
-	}
+  0% {
+    width: 50%;
+    right: 0;
+    left: 50%;
+  }
+  50% {
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+  100% {
+    width: 50%;
+    left: 0;
+    right: 50%;
+  }
 }
 @-webkit-keyframes toLeft {
-	0% {
-		width: 50%;
-		right: 0;
-		left: 50%;
-	}
-	50% {
-		width: 100%;
-		right: 0;
-		left: 0;
-	}
-	100% {
-		width: 50%;
-		left: 0;
-		right: 50%;
-	}
+  0% {
+    width: 50%;
+    right: 0;
+    left: 50%;
+  }
+  50% {
+    width: 100%;
+    right: 0;
+    left: 0;
+  }
+  100% {
+    width: 50%;
+    left: 0;
+    right: 50%;
+  }
 }
 
 // TEXT ANIMATION
 .tracking-in-contract {
-	animation: tracking-in-contract 0.8s both;
+  animation: tracking-in-contract 0.8s both;
   animation-delay: 0.2s;
 }
 @keyframes tracking-in-contract {
@@ -199,19 +202,19 @@
 }
 
 @keyframes loader {
-	0%   {
-		background-color: $xdBlue;
-	}
-	100%   {
-		background-color: $purple;
-	}
+  0% {
+    background-color: $xdBlue;
+  }
+  100% {
+    background-color: $purple;
+  }
 }
 
 @-webkit-keyframes loader {
-	0%   {
-		background-color: $xdBlue;
-	}
-	100%   {
-		background-color: $purple;
-	}
+  0% {
+    background-color: $xdBlue;
+  }
+  100% {
+    background-color: $purple;
+  }
 }
